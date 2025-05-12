@@ -50,7 +50,9 @@ class _E02PageUIState extends State<E02PageUI> {
                 SizedBox(height: 20),
                 TextField(
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                     labelText: 'Enter email or phone',
                     hintText: 'Input Email or Phone',
                   ),
@@ -63,7 +65,9 @@ class _E02PageUIState extends State<E02PageUI> {
                   child: TextField(
                     obscureText: true,
                     decoration: InputDecoration(
-                      border: OutlineInputBorder(),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
                       labelText: 'Password',
                       hintText: 'Input Password',
                       suffixIcon: IconButton(
