@@ -24,6 +24,25 @@ class _E03PageUIState extends State<E03PageUI> {
               fit: BoxFit.cover,
             ),
           ),
+          Positioned(
+            top: 50, // ปรับตำแหน่งตามต้องการ
+            left: 30, // ปรับตำแหน่งตามต้องการ
+            child: Container(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Color(0xFFF8EEC0),
+              ),
+              child: IconButton(
+                icon: Icon(
+                  Icons.arrow_back_ios_new_outlined,
+                  color: Colors.white,
+                ),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+              ),
+            ),
+          ),
           Padding(
             padding: const EdgeInsets.only(
               top: 200,
@@ -256,6 +275,7 @@ class _E03PageUIState extends State<E03PageUI> {
                 SizedBox(
                   height: 40,
                 ),
+                // Social Media
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -304,6 +324,9 @@ class _E03PageUIState extends State<E03PageUI> {
                     ),
                   ],
                 ),
+                SizedBox(
+                  height: 20,
+                )
               ],
             ),
           ),

@@ -17,16 +17,40 @@ class _E02PageUIState extends State<E02PageUI> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+      body: Stack(
         children: [
-          Image.asset(
-            'assets/images/imge2.png',
-            width: double.infinity,
-            fit: BoxFit.cover,
+          Positioned(
+            top: 0,
+            left: 0,
+            right: 0,
+            child: Image.asset(
+              'assets/images/imge2.png',
+              width: double.infinity,
+              fit: BoxFit.cover,
+            ),
+          ),
+          Positioned(
+            top: 50, // ปรับตำแหน่งตามต้องการ
+            left: 30, // ปรับตำแหน่งตามต้องการ
+            child: Container(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Color(0xFFF8EEC0),
+              ),
+              child: IconButton(
+                icon: Icon(
+                  Icons.arrow_back_ios_new_outlined,
+                  color: Colors.white,
+                ),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+              ),
+            ),
           ),
           Padding(
             padding: const EdgeInsets.only(
+              top: 360,
               left: 40,
               right: 40,
             ),
