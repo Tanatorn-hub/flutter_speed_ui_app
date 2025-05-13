@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_ui_app/views/e03_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/e05_page_ui.dart';
 
 class E04PageUI extends StatefulWidget {
   const E04PageUI({super.key});
@@ -106,7 +107,15 @@ class _E04PageUIState extends State<E04PageUI> {
                   // ภายใน Container ใส่ ElevatedButton ไว้ด้านใน
                   child: ElevatedButton(
                     // กำหนดฟังก์ชันที่จะทำงานเมื่อปุ่มถูกกด (ตอนนี้ยังว่างไว้)
-                    onPressed: () {},
+                    onPressed: () {
+                      // ใช้ Navigator.push ในการเปลี่ยนหน้า
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => E05PageUI(),
+                        ),
+                      );
+                    },
                     // ปรับแต่งสไตล์ของปุ่ม
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors
@@ -114,7 +123,9 @@ class _E04PageUIState extends State<E04PageUI> {
                       shadowColor: Colors.transparent, // ไม่มีเงา
                       shape: RoundedRectangleBorder(
                         // ทำให้ปุ่มมีมุมโค้งเหมือนกับ Container
-                        borderRadius: BorderRadius.circular(10.0),
+                        borderRadius: BorderRadius.circular(
+                          10.0,
+                        ),
                       ),
                     ),
                     child: Text(

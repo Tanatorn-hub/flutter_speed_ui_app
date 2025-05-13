@@ -5,6 +5,7 @@ import 'package:flutter_speed_ui_app/views/e01_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/e02_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/e03_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/e04_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/e05_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/home_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -27,7 +28,7 @@ class _FlutterSpeedUIState extends State<FlutterSpeedUI> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: E04PageUI(),
+      home: E05PageUI(),
       theme: ThemeData(
         textTheme: GoogleFonts.poppinsTextTheme(
           Theme.of(context).textTheme,
