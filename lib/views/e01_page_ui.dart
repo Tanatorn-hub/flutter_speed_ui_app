@@ -3,7 +3,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_speed_ui_app/views/e_page/e02_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/e02_page_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class E01PageUI extends StatefulWidget {

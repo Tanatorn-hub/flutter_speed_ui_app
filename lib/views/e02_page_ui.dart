@@ -1,8 +1,8 @@
 // ignore_for_file: sort_child_properties_last, unused_import
 
 import 'package:flutter/material.dart';
-import 'package:flutter_speed_ui_app/views/e_page/e03_page_ui.dart';
-import 'package:flutter_speed_ui_app/views/e_page/e04_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/e03_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/e04_page_ui.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class E02PageUI extends StatefulWidget {

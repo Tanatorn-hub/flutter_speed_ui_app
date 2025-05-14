@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_speed_ui_app/views/e_page/e06_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/e06_page_ui.dart';
 
 // สร้าง List ของ FocusNode เพื่อใช้ควบคุมการโฟกัสในแต่ละช่องกรอก
 List<FocusNode> focusNodes = List.generate(4, (index) => FocusNode());

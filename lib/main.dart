@@ -1,12 +1,12 @@
 // ignore_for_file: unused_import
 
 import 'package:flutter/material.dart';
-import 'package:flutter_speed_ui_app/views/e_page/e01_page_ui.dart';
-import 'package:flutter_speed_ui_app/views/e_page/e02_page_ui.dart';
-import 'package:flutter_speed_ui_app/views/e_page/e03_page_ui.dart';
-import 'package:flutter_speed_ui_app/views/e_page/e04_page_ui.dart';
-import 'package:flutter_speed_ui_app/views/e_page/e05_page_ui.dart';
-import 'package:flutter_speed_ui_app/views/e_page/e06_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/e01_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/e02_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/e03_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/e04_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/e05_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/e06_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/home_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -29,7 +29,7 @@ class _FlutterSpeedUIState extends State<FlutterSpeedUI> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: E06PageUI(),
+      home: E01PageUI(),
       theme: ThemeData(
         textTheme: GoogleFonts.poppinsTextTheme(
           Theme.of(context).textTheme,
