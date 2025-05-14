@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_ui_app/views/a02_page_ui.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class A01PageUI extends StatefulWidget {
   const A01PageUI({super.key});
@@ -47,7 +48,7 @@ class _A01PageUIState extends State<A01PageUI> {
               ),
               Text(
                 'Dixcover Your',
-                style: TextStyle(
+                style: GoogleFonts.outfit(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
                   color: Color(0xFF464444),
@@ -55,7 +56,7 @@ class _A01PageUIState extends State<A01PageUI> {
               ),
               Text(
                 'Own Dream House',
-                style: TextStyle(
+                style: GoogleFonts.outfit(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
                   color: Color(0xFF464444),
@@ -72,8 +73,8 @@ class _A01PageUIState extends State<A01PageUI> {
                 child: Text(
                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam maecenas mi non sed ut odio. Non, justo, sed facilisi et. Eget viverra urna, vestibulum egestas faucibus egestas. Sagittis nam velit volutpat eu nunc.',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 12,
+                  style: GoogleFonts.outfit(
+                    fontSize: 14,
                   ),
                 ),
               ),
@@ -99,6 +100,8 @@ class _A01PageUIState extends State<A01PageUI> {
                           backgroundColor: Color(0xffF89AEE),
                           foregroundColor: Colors.white,
                           padding: EdgeInsets.symmetric(vertical: 16),
+                          elevation: 4, // ความสูงของเงา
+                          shadowColor: Color.fromRGBO(0, 0, 0, 0.5), // สีของเงา
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(10),
@@ -110,9 +113,10 @@ class _A01PageUIState extends State<A01PageUI> {
                         ),
                         child: Text(
                           'Sign in',
-                          style: TextStyle(
+                          style: GoogleFonts.outfit(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
+                            color: Colors.white,
                           ),
                         ),
                       ),
@@ -134,6 +138,8 @@ class _A01PageUIState extends State<A01PageUI> {
                           backgroundColor: Color(0xffF3F3F3),
                           foregroundColor: Colors.black,
                           padding: EdgeInsets.symmetric(vertical: 16),
+                          elevation: 4, // ความสูงของเงา
+                          shadowColor: Color.fromRGBO(0, 0, 0, 0.5), // สีของเงา
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.only(
                               topRight: Radius.circular(10),
@@ -145,7 +151,7 @@ class _A01PageUIState extends State<A01PageUI> {
                         ),
                         child: Text(
                           'Register',
-                          style: TextStyle(
+                          style: GoogleFonts.outfit(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             color: Color(0xFF464444),
