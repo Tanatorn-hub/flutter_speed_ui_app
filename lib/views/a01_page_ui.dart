@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/views/a02_page_ui.dart';
 
 class A01PageUI extends StatefulWidget {
   const A01PageUI({super.key});
@@ -31,30 +32,33 @@ class _A01PageUIState extends State<A01PageUI> {
                         bottomRight: Radius.circular(60),
                       ),
                     ),
-                    height: 450,
+                    height: 500,
                     width: double.infinity,
                   ),
                   Image.asset(
                     'assets/images/imga1.png',
                     height: 500,
+                    width: 600,
                   ),
                 ],
               ),
               SizedBox(
-                height: 20,
+                height: 40,
               ),
               Text(
                 'Dixcover Your',
                 style: TextStyle(
-                  fontSize: 30,
+                  fontSize: 35,
                   fontWeight: FontWeight.bold,
+                  color: Color(0xFF464444),
                 ),
               ),
               Text(
                 'Own Dream House',
                 style: TextStyle(
-                  fontSize: 30,
+                  fontSize: 35,
                   fontWeight: FontWeight.bold,
+                  color: Color(0xFF464444),
                 ),
               ),
               SizedBox(
@@ -74,56 +78,86 @@ class _A01PageUIState extends State<A01PageUI> {
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: 90,
               ),
-              Row(
-                children: [
-                  // ปุ่มซ้าย (Sign in) — ตัดขอบด้านขวา
-                  Expanded(
-                    child: ElevatedButton(
-                      onPressed: () {
-                        // ทำบางอย่าง
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.pinkAccent,
-                        foregroundColor: Colors.white,
-                        padding: EdgeInsets.symmetric(vertical: 16),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(30),
-                            bottomLeft: Radius.circular(30),
-                            topRight: Radius.circular(0), // เหลี่ยม
-                            bottomRight: Radius.circular(0), // เหลี่ยม
+              Padding(
+                padding: const EdgeInsets.only(
+                  left: 15,
+                  right: 15,
+                ),
+                // ปุ่ม ------------------------------------------------------
+                child: Row(
+                  children: [
+                    // ปุ่มซ้าย (Sign in) — ตัดขอบด้านขวา
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          // ทำบางอย่าง
+                        },
+                        style: ElevatedButton.styleFrom(
+                          fixedSize: Size.fromHeight(55),
+                          backgroundColor: Color(0xffF89AEE),
+                          foregroundColor: Colors.white,
+                          padding: EdgeInsets.symmetric(vertical: 16),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(10),
+                              bottomLeft: Radius.circular(10),
+                              topRight: Radius.circular(0), // เหลี่ยม
+                              bottomRight: Radius.circular(0), // เหลี่ยม
+                            ),
+                          ),
+                        ),
+                        child: Text(
+                          'Sign in',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                       ),
-                      child: Text('Sign in'),
                     ),
-                  ),
 
-                  // ปุ่มขวา (Register) — ตัดขอบด้านซ้าย
-                  Expanded(
-                    child: ElevatedButton(
-                      onPressed: () {
-                        // ทำบางอย่าง
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white,
-                        foregroundColor: Colors.black,
-                        padding: EdgeInsets.symmetric(vertical: 16),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(30),
-                            bottomRight: Radius.circular(30),
-                            topLeft: Radius.circular(0), // เหลี่ยม
-                            bottomLeft: Radius.circular(0), // เหลี่ยม
+                    // ปุ่มขวา (Register) — ตัดขอบด้านซ้าย
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => A02PageUI(),
+                            ),
+                          );
+                        },
+                        style: ElevatedButton.styleFrom(
+                          fixedSize: Size.fromHeight(55),
+                          backgroundColor: Color(0xffF3F3F3),
+                          foregroundColor: Colors.black,
+                          padding: EdgeInsets.symmetric(vertical: 16),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.only(
+                              topRight: Radius.circular(10),
+                              bottomRight: Radius.circular(10),
+                              topLeft: Radius.circular(0), // เหลี่ยม
+                              bottomLeft: Radius.circular(0), // เหลี่ยม
+                            ),
+                          ),
+                        ),
+                        child: Text(
+                          'Register',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xFF464444),
                           ),
                         ),
                       ),
-                      child: Text('Register'),
                     ),
-                  ),
-                ],
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 30,
               ),
             ],
           ),
