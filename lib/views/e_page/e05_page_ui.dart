@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_speed_ui_app/views/e06_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/e_page/e06_page_ui.dart';
 
 // สร้าง List ของ FocusNode เพื่อใช้ควบคุมการโฟกัสในแต่ละช่องกรอก
 List<FocusNode> focusNodes = List.generate(4, (index) => FocusNode());
@@ -119,9 +119,9 @@ class _E05PageUIState extends State<E05PageUI> {
                           boxShadow: [
                             BoxShadow(
                               color: Colors.black26, // สีเงา
-                              blurRadius: 4, // ความเบลอของเงา
+                              blurRadius: 2, // ความเบลอของเงา
                               offset: Offset(
-                                  0, 2), // ตำแหน่งเงา (แนวตั้งลงล่าง 2 px)
+                                  0, 0), // ตำแหน่งเงา (แนวตั้งลงล่าง 2 px)
                             ),
                           ],
                         ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_speed_ui_app/views/e03_page_ui.dart';
-import 'package:flutter_speed_ui_app/views/e05_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/e_page/e03_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/e_page/e05_page_ui.dart';
 
 class E04PageUI extends StatefulWidget {
   const E04PageUI({super.key});
