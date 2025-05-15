@@ -134,10 +134,16 @@ class _A01PageUIState extends State<A01PageUI> {
                           );
                         },
                         style: ElevatedButton.styleFrom(
-                          fixedSize: Size.fromHeight(55),
-                          backgroundColor: Color(0xffF3F3F3),
+                          fixedSize: Size.fromHeight(
+                            55,
+                          ),
+                          backgroundColor: Color(
+                            0xffF3F3F3,
+                          ),
                           foregroundColor: Colors.black,
-                          padding: EdgeInsets.symmetric(vertical: 16),
+                          padding: EdgeInsets.symmetric(
+                            vertical: 16,
+                          ),
                           elevation: 4, // ความสูงของเงา
                           shadowColor: Color.fromRGBO(0, 0, 0, 0.5), // สีของเงา
                           shape: RoundedRectangleBorder(

@@ -173,12 +173,12 @@ class _E02PageUIState extends State<E02PageUI> {
                   children: [
                     Expanded(
                       child: Container(
-                        height: 1,
+                        height: 2,
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
                             colors: [
-                              const Color.fromARGB(255, 249, 108, 7),
-                              const Color.fromARGB(255, 244, 208, 147),
+                              Color(0xFFFF9F00),
+                              Color(0x00FF9F00),
                             ], // ไล่จากสีส้มไปสีส้มเข้ม
                             begin: Alignment.centerRight,
                             end: Alignment.centerLeft,
@@ -199,12 +199,12 @@ class _E02PageUIState extends State<E02PageUI> {
                     ),
                     Expanded(
                       child: Container(
-                        height: 1, // กำหนดความสูงให้เหมือนเส้น
+                        height: 2, // กำหนดความสูงให้เหมือนเส้น
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
                             colors: [
-                              const Color.fromARGB(255, 249, 108, 7),
-                              const Color.fromARGB(255, 244, 208, 147),
+                              Color(0xFFFF9F00),
+                              Color(0x00FF9F00),
                             ], // ไล่จากสีส้มไปสีส้มเข้ม
                             begin: Alignment.centerLeft,
                             end: Alignment.centerRight,
