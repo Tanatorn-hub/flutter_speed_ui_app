@@ -45,7 +45,7 @@ class _B01PageUIState extends State<B01PageUI> {
               height: 500,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Color.fromRGBO(239, 240, 255, 0.3), // สีพื้นอ่อน
+                color: Color.fromRGBO(239, 240, 255, 0.6), // สีพื้นอ่อน
               ),
             ),
           ),
