@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/views/b03_page_ui.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class B02PageUI extends StatefulWidget {
@@ -205,12 +206,22 @@ class _B02PageUIState extends State<B02PageUI> {
                 SizedBox(
                   height: 30,
                 ),
-                Text(
-                  'Create new account',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
-                    color: Color(0xff494949),
+                TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => B03PageUI(),
+                      ),
+                    );
+                  },
+                  child: Text(
+                    'Create an account',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                      color: Color(0xff494949),
+                    ),
                   ),
                 ),
                 SizedBox(
