@@ -6,6 +6,7 @@ import 'package:flutter_speed_ui_app/views/a02_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/b01_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/b02_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/b03_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/c01_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/d01_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/d02_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/d03_page_ui.dart';
@@ -41,7 +42,7 @@ class _FlutterSpeedUIState extends State<FlutterSpeedUI> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: D07PageUI(),
+      home: C01PageUI(),
       theme: ThemeData(
         textTheme: GoogleFonts.poppinsTextTheme(
           Theme.of(context).textTheme,
