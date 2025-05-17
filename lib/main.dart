@@ -44,7 +44,7 @@ class _FlutterSpeedUIState extends State<FlutterSpeedUI> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: C03PageUI(),
+      home: A01PageUI(),
       theme: ThemeData(
         textTheme: GoogleFonts.poppinsTextTheme(
           Theme.of(context).textTheme,
