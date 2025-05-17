@@ -231,74 +231,74 @@ class _D02PageUIState extends State<D02PageUI> {
                   height: 20,
                 ),
 
-                // ปุ่ม------------------------------------------------------------
+                // ปุ่ม social media------------------------------------------------------------
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-                        backgroundColor: Colors.white,
-                        elevation: 0,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          side: BorderSide(
-                            color: Color(0xffE8ECF4),
+                    Expanded(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          padding: EdgeInsets.symmetric(
+                              vertical: 10), // เอา horizontal ออก
+                          backgroundColor: Colors.white,
+                          elevation: 0,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            side: BorderSide(
+                              color: Color(0xffE8ECF4),
+                            ),
                           ),
                         ),
-                      ),
-                      onPressed: () {},
-                      child: Icon(
-                        FontAwesomeIcons.facebookF,
-                        color: Color(0xff4092FF),
-                        size: 25,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-                        backgroundColor: Colors.white,
-                        elevation: 0,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          side: BorderSide(
-                            color: Color(0xffE8ECF4),
-                          ),
+                        onPressed: () {},
+                        child: Icon(
+                          FontAwesomeIcons.facebookF,
+                          color: Color(0xff4092FF),
+                          size: 25,
                         ),
                       ),
-                      onPressed: () {},
-                      child: Image(
-                        image: AssetImage('assets/images/imge3.png'),
-                        width: 25,
-                        height: 25,
-                      ),
                     ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-                        backgroundColor: Colors.white,
-                        elevation: 0,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          side: BorderSide(
-                            color: Color(0xffE8ECF4),
+                    SizedBox(width: 10),
+                    Expanded(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          padding: EdgeInsets.symmetric(vertical: 10),
+                          backgroundColor: Colors.white,
+                          elevation: 0,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            side: BorderSide(
+                              color: Color(0xffE8ECF4),
+                            ),
                           ),
                         ),
+                        onPressed: () {},
+                        child: Image.asset(
+                          'assets/images/imge3.png',
+                          width: 25,
+                          height: 25,
+                        ),
                       ),
-                      onPressed: () {},
-                      child: Icon(
-                        FontAwesomeIcons.apple,
-                        color: Colors.black,
-                        size: 25,
+                    ),
+                    SizedBox(width: 10),
+                    Expanded(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          padding: EdgeInsets.symmetric(vertical: 10),
+                          backgroundColor: Colors.white,
+                          elevation: 0,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            side: BorderSide(
+                              color: Color(0xffE8ECF4),
+                            ),
+                          ),
+                        ),
+                        onPressed: () {},
+                        child: Icon(
+                          FontAwesomeIcons.apple,
+                          color: Colors.black,
+                          size: 25,
+                        ),
                       ),
                     ),
                   ],
