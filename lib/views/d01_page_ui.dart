@@ -92,7 +92,7 @@ class _D01PageUIState extends State<D01PageUI> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 90),
+                    SizedBox(height: 70),
                     TextButton(
                       onPressed: () {},
                       child: Text(
