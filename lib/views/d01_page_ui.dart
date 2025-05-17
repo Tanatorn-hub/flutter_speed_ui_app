@@ -61,7 +61,6 @@ class _D01PageUIState extends State<D01PageUI> {
                       child: Text(
                         'Login',
                         style: GoogleFonts.urbanist(
-                          fontSize: 20,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                         ),
@@ -88,7 +87,6 @@ class _D01PageUIState extends State<D01PageUI> {
                       child: Text(
                         'Register',
                         style: GoogleFonts.urbanist(
-                          fontSize: 20,
                           fontWeight: FontWeight.bold,
                           color: Color(0xFF1E232C),
                         ),

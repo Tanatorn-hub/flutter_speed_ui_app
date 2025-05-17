@@ -149,7 +149,6 @@ class _D05PageUIState extends State<D05PageUI> {
                   child: Text(
                     'Verify',
                     style: GoogleFonts.urbanist(
-                      fontSize: 20,
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
                     ),

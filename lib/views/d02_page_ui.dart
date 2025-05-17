@@ -187,7 +187,6 @@ class _D02PageUIState extends State<D02PageUI> {
                   child: Text(
                     'Login',
                     style: GoogleFonts.urbanist(
-                      fontSize: 20,
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
                     ),

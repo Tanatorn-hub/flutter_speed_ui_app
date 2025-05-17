@@ -117,7 +117,6 @@ class _D04PageUIState extends State<D04PageUI> {
                   child: Text(
                     'Send code',
                     style: GoogleFonts.urbanist(
-                      fontSize: 20,
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
                     ),
